@@ -1,8 +1,5 @@
 # soc_methodology_submission
 
-### 중요
-* 초기 깃 클론은 Personal computer에 하여야 함.
-
 ### 실행 환경 Notation
 * (1) : Personal Computer
 * (2) : Setup-instance
@@ -10,6 +7,13 @@
 * (4) : Chipyard docker container
 * (5) : Firesim F1 instance
 * (6) : RISCV Linux
+
+### 중요
+* 초기 깃 클론은 Personal computer에 하여야 함.
+* 또한, firesim.pem은 깃 클론 후 권한 확인해야함.
+```
+(1)$chmod 400 firesim.pem
+```
 
 ### Manager instance pre-setup
 * manager-instance-pics 안에 있는 그림 01~03을 참고하여 인스턴스 생성 후 로그인
@@ -23,7 +27,8 @@
 ```
 
 ### Manager instance 셋업
-* manager-instance-pics 안에 있는 그림 04~12를 참고하여 Manager instance 생성 (대부분의 작업은 여기서 수행될 예정임)
+* manager-instance-pics 안에 있는 그림 04~12를 참고하여 Manager instance 생성 (대부분의 작업은 이 인스턴스에서 수행될 예정임)
+* 그림 7의 사용자 데이터에 입력하는 데이터는 manager-instance-pics/user_data.txt에 있는 것을 그대로 복사/붙여넣기
 * 그림 12가 될때까진 약 10분 걸림. 이후 아래 커맨드로 셋업 계속
 ```
 (1)$ssh -i firesim.pem centos@xxx.xxx.xxx.xxx
