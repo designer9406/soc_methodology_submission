@@ -87,8 +87,9 @@
 (3)$./marshal.run  ## 이후 $DIR_FIRESIM/workloads 에 hwacha~~가 생겼는지 확인하기.
 ```
 
-# Firesim
+# Firesim (F1 instance execution)
 * 이 작업은 F1 instance를 이용하여 Hwacha에서 Target 5 layer를 실행한 후 종료하는 것 까지임
+* Hwacha AGFI(AWS FPGA IMAGE)는 pre-build 되어 있는 것을 사용하였으며, custom build를 하려면 아래 Firesim (Hardware build)를 따라 할 것
 
 ```
 (3)$cd $DIR_FIRESIM
@@ -117,6 +118,21 @@
 (3)$firesim terminaterunfarm -> 'yes'
 ```
 
+# Firesim (Hardware build)
+* $DIR_FIRESIM의 폴더에 config_build.ini, config_build_recipes.ini, config_hwdb.ini, config_runtime.ini가 있음
+* config_build_recipes.ini  : AGFI를 만들 목록
+* config_build.ini  : config_build_recipes에 있는 것들 중 어떤 것을 만들 것인지 설정해줌 -> 아래 'firesim buildafi' 명령을 통해 Build instance를 새로 생성하고, 해당 인스턴스에서 하드웨어 합성이 실행됨.
+* config_hwdb.ini  : 합성된 Hardware의 AGFI ID가 저장되어 있음
+* config_runtime.ini : F1 instance에서 사용하게 될 AGFI 및 RISCV CPU 부팅 이미지를 지정해줌
+
+```
+(3)$cd $DIR_FIRESIM
+(3)$firesim buildafi
+```
+
+* 추가 설명
+* config_build_recipes.ini에 TARGET_CONFIG의 끝부분에 'chipyard.HwachaRocketConfig'로 정의되어 있음
+* 해당 내용은 ~/firesim/target-design/chipyard/generators/chipyard/src/main/scala/config/RocketConfigs.scala에 class로 선언되어 있음
 
 # Reference
 
