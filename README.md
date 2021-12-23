@@ -53,7 +53,6 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 # Hwacha-net
 * Docker 설치 및 'Chipyard-image' 다운로드
 * 해당 도커 이미지에 RISCV cpu 및 Hwacha를 위한 Compiler toolchain이 pre-build 되어 있으므로 편리하게 사용할 수 있음.
-* Custom ISA 생성 및 새로 toolchain을 빌드 할 수 있지만, 오래 걸림
 ```
 (3)$sudo yum install docker
 (3)$sudo systemctl start docker
