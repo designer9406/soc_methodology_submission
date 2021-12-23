@@ -1,5 +1,6 @@
 # soc_methodology_submission
 * 각 커맨드 옆에 적힌 시간은 대략적인 시간일뿐, 정확하지 않습니다.
+* 깃 클론은 우분투 환경의 Personal Computer에 하는 것을 추천.
 
 # 실행 환경 Notation
 * (1) : Personal Computer
@@ -10,7 +11,6 @@
 * (6) : RISCV Linux
 
 # 중요
-* 초기 깃 클론은 Personal computer에 하여야 함.
 * 각 실행 커맨드들이 어디서 실행되는 것인지 중요하므로 위의 [실행 환경 Notation]을 잘 확인하여야 함.
 * 또한, firesim.pem은 깃 클론 후 권한 확인/변경해야함.
 ```
@@ -18,6 +18,7 @@
 ```
 
 # Firesim pre-setup
+* 이 작업은 '566403305827'에 대해서는 이미 진행되어 있으므로, Manager instance 셋업으로 바로 넘어가도 됨.
 * manager-instance-pics 안에 있는 01~03.png를 참고하여 인스턴스 생성 후 로그인
 ```
 (2)$aws configure
@@ -76,7 +77,7 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 (3)$sudo docker cp hwacha_net_cntr:/root/hwacha-net/soc_project $DIR_FIREMARSHAL/hwacha/overlay/root/
 (3)$cd $DIR_FIREMARSHAL/
 (3)$./init-submodules.sh   ## ~ 10 min
-(3)$./marshal -v build br-base.json  ## ~ 15 min. If you are having problems with the message "riscv toolchain not detected. ~~ ", you must have forgotten "source /home/centos/firesim/sourceme-f1-manager.sh".
+(3)$./marshal -v build br-base.json  ## ~ 40 min. If you are having problems with the message "riscv toolchain not detected. ~~ ", you must have forgotten "source /home/centos/firesim/sourceme-f1-manager.sh".
 (3)$./marshal.run  ## 이후 $DIR_FIRESIM/workloads 에 hwacha~~가 생겼는지 확인하기.
 ```
 
@@ -99,7 +100,7 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 (5)$screen -r fsim0
 (6)$ (ID:root, PW: firesim)
 (6)$chmod +x soc_project
-(6)$./soc_project   ## (takes some times..............)
+(6)$./soc_project   ## 05:10
 ```
 
 * F1 instance 종료
