@@ -100,8 +100,10 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 (5)$screen -r fsim0
 (6)$ (ID:root, PW: firesim)
 (6)$chmod +x soc_project
-(6)$./soc_project   ## 05:10
+(6)$./soc_project
 ```
+* ./soc_project 바이너리를 실행하였을 때, Hwacha는 빠르게 끝나지만, CPU는 상당히 오래 걸리는 것으로 보임. (CPU에서 오랫동안 걸리는데, 멈춘 것은 아니며, 계속 돌고 있으므로 최종 값을 보기 위해서는 인내심을 가지고 기다려야 함.)
+* 소스코드 상에서 측정한 CPU의 실행 시간은 대략 ~120s정도로 출력됨.
 
 * F1 instance 종료
 ```
