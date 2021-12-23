@@ -22,3 +22,7 @@ chmod +x $FIREMARSHAL_DIR/marshal.run
 
 cp /home/centos/firesim_config/* $FIRESIM_DIR/
 
+echo "
+DIR_FIREMARSHAL=/home/centos/firesim/sw/firesim-software
+DIR_FIRESIM=/home/centos/firesim/deploy
+" >> ~/.bashrc
