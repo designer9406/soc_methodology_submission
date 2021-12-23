@@ -18,7 +18,7 @@
 ```
 
 # Firesim pre-setup
-* 이 작업은 '566403305827'에 대해서는 이미 진행되어 있으므로, Manager instance 셋업으로 바로 넘어가도 됨.
+* 이 작업은 '566403305827'계정에 대해서는 이미 진행되어 있으므로, Manager instance 셋업으로 바로 넘어가도 됨.
 * manager-instance-pics 안에 있는 01~03.png를 참고하여 인스턴스 생성 후 로그인
 ```
 (2)$aws configure
