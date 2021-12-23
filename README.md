@@ -6,6 +6,7 @@
 * (3) : Firesim manager instance
 * (4) : Chipyard docker container
 * (5) : Firesim F1 instance
+* (6) : RISCV Linux
 
 ### Manager instance pre-setup
 * pics안에 있는 그림 01~03을 참고하여 인스턴스 생성 후 로그인
@@ -62,9 +63,11 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 
 ```
 (3)$bash /home/centos/instance_setup.sh
-(3)$source /home/centos/.bashrc
+(3)$source /home/centos/.bashrc  ## 이후 터미널 다시 여는 것을 추천
 (3)$sudo docker cp hwacha_net_cntr:/root/hwacha-net/soc_project $DIR_FIREMARSHAL/hwacha/overlay/root/
 (3)$cd $DIR_FIREMARSHAL/
+(3)$./init-submodules.sh
+(3)$./marshal -v build br-base.json  ## (takes some times..)
 (3)$./marshal.run  ## 이후 $DIR_FIRESIM/workloads 에 hwacha~~가 생겼는지 확인하기.
 ```
 
@@ -84,6 +87,17 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 ```
 (3)$firesim runworkload
 (3-new)$ssh <firesim runworkload를 수행한 터미널에서 보이는 로컬 ip 주소값을 입력>
-(3-net)$
-(3)$firesim terminaterunfarm
+(5)$screen -r fsim0
+(6)$ (ID:root, PW: firesim)
+(6)$chmod +x soc_project
+(6)$./soc_project   ## (takes some times..............)
 ```
+
+* F1 instance 종료
+```
+(3)$ ctrl+c
+(3)$firesim terminaterunfarm -> 'yes'
+```
+
+
+### End.
