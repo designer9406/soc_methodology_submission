@@ -1,5 +1,8 @@
 # soc_methodology_submission
 
+### 중요
+* 초기 깃 클론은 Personal computer에 하여야 함.
+
 ### 실행 환경 Notation
 * (1) : Personal Computer
 * (2) : Setup-instance
