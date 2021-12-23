@@ -33,6 +33,8 @@
 (2)$wget https://raw.githubusercontent.com/firesim/firesim/master/scripts/aws-setup.py
 (2)$python aws-setup.py
 ```
+* 이후 setup-instance 종료
+
 
 # Manager instance 셋업
 * manager-instance-pics 안에 있는 04~12.png를 참고하여 Manager instance 생성 (대부분의 작업은 이 인스턴스에서 수행될 예정임)
