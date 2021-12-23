@@ -31,7 +31,6 @@
 * 그림 7의 사용자 데이터에 입력하는 데이터는 manager-instance-pics/user_data.txt에 있는 것을 그대로 복사/붙여넣기
 * 그림 12가 될때까진 약 10분 걸림. 이후 아래 커맨드로 셋업 계속
 ```
-(1)$ssh -i firesim.pem centos@xxx.xxx.xxx.xxx
 (3)$git clone https://github.com/firesim/firesim
 (3)$cd firesim
 (3)$./build-setup.sh fast
@@ -107,5 +106,11 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 (3)$firesim terminaterunfarm -> 'yes'
 ```
 
+
+### Reference
+
+Firesim: https://docs.fires.im/en/latest/index.html
+Firemarshal: https://firemarshal.readthedocs.io/en/latest/index.html
+Chipyard: https://chipyard.readthedocs.io/en/latest/
 
 ### End.
