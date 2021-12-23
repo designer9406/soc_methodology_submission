@@ -12,7 +12,7 @@
 * (6) : RISCV Linux
 
 ### Manager instance pre-setup
-* pics안에 있는 그림 01~03을 참고하여 인스턴스 생성 후 로그인
+* manager-instance-pics 안에 있는 그림 01~03을 참고하여 인스턴스 생성 후 로그인
 ```
 (2)$aws configure
 (2)$sudo yum -y install python-pip
@@ -23,7 +23,7 @@
 ```
 
 ### Manager instance 셋업
-* pics 안에 있는 그림 04~12를 참고하여 Manager instance 생성 (대부분의 작업은 여기서 수행될 예정임)
+* manager-instance-pics 안에 있는 그림 04~12를 참고하여 Manager instance 생성 (대부분의 작업은 여기서 수행될 예정임)
 * 그림 12가 될때까진 약 10분 걸림. 이후 아래 커맨드로 셋업 계속
 ```
 (1)$ssh -i firesim.pem centos@xxx.xxx.xxx.xxx
