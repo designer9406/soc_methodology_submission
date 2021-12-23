@@ -105,7 +105,7 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 (5)$screen -r fsim0
 (6)$ (ID:root, PW: firesim)
 (6)$chmod +x soc_project
-(6)$./soc_project
+(6)$./soc_project   ## ~ 30 min
 ```
 
 * F1 instance 종료
