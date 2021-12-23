@@ -92,18 +92,18 @@ source /home/centos/firesim/sourceme-f1-manager.sh
 
 ```
 (3)$cd $DIR_FIRESIM
-(3)$firesim launchrunfarm
-(3)$firesim infrasetup
+(3)$firesim launchrunfarm   ## F1 instance 켜주는 작업
+(3)$firesim infrasetup      ## F1 instance에서 필요한 여러 환경들을 세팅해줌. (xdma, uart, FPGA download 등?)
 ```
 * 위 커맨드를 수행하면서 manager intance 터미널을 새로 열어주고, 아래 작업 잊지말고 말고 해주기.
 ```
-source /home/centos/firesim/sourceme-f1-manager.sh
+(3-new)$source /home/centos/firesim/sourceme-f1-manager.sh
 ```
 
 * ./soc_project 바이너리를 실행하였을 때, Hwacha는 빠르게 끝나지만, CPU는 상당히 오래 걸리는 것으로 보임. (CPU에서 오랫동안 걸리는데, 멈춘 것은 아니며, 계속 돌고 있으므로 최종 값을 보기 위해서는 인내심을 가지고 기다려야 함.)
 * 소스코드 상에서 측정한 CPU의 실행 시간은 대략 ~120s정도로 출력됨.
 ```
-(3)$firesim runworkload
+(3)$firesim runworkload    ## F1 instance에서 RISCV CPU를 부팅 시킴.
 (3-new)$ssh <firesim runworkload를 수행한 터미널에서 보이는 로컬 ip 주소값을 입력>
 (5)$screen -r fsim0
 (6)$ (ID:root, PW: firesim)
