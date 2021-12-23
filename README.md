@@ -31,8 +31,8 @@
 
 # Manager instance 셋업
 * manager-instance-pics 안에 있는 04~12.png를 참고하여 Manager instance 생성 (대부분의 작업은 이 인스턴스에서 수행될 예정임)
-* 그림 7의 사용자 데이터에 입력하는 데이터는 manager-instance-pics/user_data.txt에 있는 것을 그대로 복사/붙여넣기
-* 그림 12가 될때까진 약 10분 걸림. 이후 아래 커맨드로 셋업 계속
+* 07.png의 사용자 데이터에 입력하는 데이터는 manager-instance-pics/user_data.txt에 있는 것을 그대로 복사/붙여넣기
+* 12.png가 될때까진 약 10분 걸림. 이후 아래 커맨드로 셋업 계속
 ```
 (3)$git clone https://github.com/firesim/firesim
 (3)$cd firesim
