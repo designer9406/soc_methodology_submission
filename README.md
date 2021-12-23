@@ -1,11 +1,11 @@
 # soc_methodology_submission
 
 ### 실행 환경 Notation
-(1) : Personal Computer
-(2) : Setup-instance
-(3) : Firesim manager instance
-(4) : Chipyard docker container
-(5) : Firesim F1 instance
+* (1) : Personal Computer
+* (2) : Setup-instance
+* (3) : Firesim manager instance
+* (4) : Chipyard docker container
+* (5) : Firesim F1 instance
 
 ### Manager instance pre-setup
 * pics안에 있는 그림 01~03을 참고하여 인스턴스 생성 후 로그인
