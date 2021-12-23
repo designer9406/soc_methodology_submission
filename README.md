@@ -79,7 +79,7 @@
 
 ```
 (3)$bash /home/centos/instance_setup.sh
-(3)$source /home/centos/.bashrc  ## 이후 터미널 다시 여는 것을 추천
+(3)$source /home/centos/.bashrc  ## 이후 Manager-instace의 터미널을 다시 여는 것을 추천
 (3)$sudo docker cp hwacha_net_cntr:/root/hwacha-net/soc_project $DIR_FIREMARSHAL/hwacha/overlay/root/
 (3)$cd $DIR_FIREMARSHAL/
 (3)$./init-submodules.sh   ## ~ 10 min
