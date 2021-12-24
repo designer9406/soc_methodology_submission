@@ -107,7 +107,7 @@
 (3)$firesim runworkload    ## F1 instance에서 RISCV CPU를 부팅 시킴.
 (3-new)$ssh <firesim runworkload를 수행한 터미널에서 보이는 로컬 ip 주소값을 입력>
 (5)$screen -r fsim0
-(6)$ (ID:root, PW: firesim)
+(6)$ Login -> ID:root, PW: firesim
 (6)$chmod +x soc_project
 (6)$./soc_project   ## ~ 30 min
 ```
@@ -140,4 +140,4 @@
 * Firemarshal: https://firemarshal.readthedocs.io/en/latest/index.html
 * Chipyard: https://chipyard.readthedocs.io/en/latest/
 
-# End.
+# End
