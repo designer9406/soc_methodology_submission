@@ -3,7 +3,7 @@
 * 처음부터 끝까지는 약 2시간 반 걸렸으며, 처음 한번만 세팅 해놓으면 되는 것들이 있습니다.
 * 깃 클론은 우분투 환경의 Personal Computer에 하는 것을 추천드립니다.
 * 문의 사항은 아래로 메일을 보내주세요.
-* hongjunum@hanyang.ac.k
+* hongjunum@hanyang.ac.kr
 * youngbinson@hanyang.ac.kr
 * hamjh9510@hanyang.ac.kr
 
