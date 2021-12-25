@@ -54,7 +54,7 @@
 
 ### 아래 커맨드는 Manager instance 로그인 할 때마다 수행되어야 함.
 * ssh-agent를 실행하는 것임.
-* 만약 여러명의 개발자들이 수행할 때는 sourceme-f1-manager.sh에서 export FIRESIM_RUNFARM_PREFIX=""에 farm name을 추가해서 각각의 farm을 분리시켜야 개발할 때 편함. (그렇지 않으면 여러 farm이 공유되어서 많은 문제가 야기됨.)
+* 만약 여러명의 개발자들이 동일한 AMI 계정에서 수행할 때는 sourceme-f1-manager.sh에서 export FIRESIM_RUNFARM_PREFIX=""에 farm name을 추가해서 각각의 farm을 분리시켜야 개발할 때 편함. (그렇지 않으면 여러 farm이 공유되어서 많은 문제가 야기됨.)
 * 아래 커맨드에서 에러가 나면 key copy가 제대로 안되었음. (local에 있는 firesim.pem을 manager instance의 /home/centos로 복사되었는지 확인)
 ```
 (3)$source /home/centos/firesim/sourceme-f1-manager.sh
